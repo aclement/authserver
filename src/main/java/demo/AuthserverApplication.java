@@ -145,12 +145,12 @@ public class AuthserverApplication extends WebMvcConfigurerAdapter {
 				throws Exception {
 			// This instead of adjusting contextpath since not everything should be affected
 			
-//			endpoints.pathMapping("/oauth/authorize", "/uaa/oauth/authorize");
-//			endpoints.pathMapping("/oauth/token", "/uaa/oauth/token");
-//			endpoints.pathMapping("/oauth/check_token", "/uaa/oauth/check_token");
-//			endpoints.pathMapping("/oauth/confirm_access", "/uaa/oauth/confirm_access");
-//			endpoints.pathMapping("/oauth/error", "/uaa/oauth/error");
-//			endpoints.pathMapping("/oauth/token_key", "/uaa/oauth/token_key");
+			endpoints.pathMapping("/oauth/authorize", "/uaa/oauth/authorize");
+			endpoints.pathMapping("/oauth/token", "/uaa/oauth/token");
+			endpoints.pathMapping("/oauth/check_token", "/uaa/oauth/check_token");
+			endpoints.pathMapping("/oauth/confirm_access", "/uaa/oauth/confirm_access");
+			endpoints.pathMapping("/oauth/error", "/uaa/oauth/error");
+			endpoints.pathMapping("/oauth/token_key", "/uaa/oauth/token_key");
 	       
 			endpoints.tokenStore(tokenStore())
 	          .accessTokenConverter(accessTokenConverter())
